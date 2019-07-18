@@ -14,10 +14,10 @@ var buttonRight;
 
 function setup(){
   //createCanvas(360,540);
-  createCanvas(displayWidth, displayHeight-200);
-  hei=(displayHeight-200);
+  createCanvas(displayWidth-700, displayHeight-300);
+  hei=(displayHeight-300);
   s = new Snake();
-  frameRate(4);
+  frameRate(8);
   //piel=createImg('img/piel.jpg');
   //piel.size(20,20);
   pickLocation();
@@ -119,19 +119,19 @@ function draw(){
 
   textSize(32);
   fill(255);
-  text((punt-1), 340, 25); 
+  text((punt-1), displayWidth-720, 25); 
 
   } else if ((punt-1)<100) {
 
   textSize(32);
   fill(255);
-  text((punt-1), 322, 25); 
+  text((punt-1), displayWidth-738, 25); 
 
   }else {
 
   textSize(32);
   fill(255);
-  text((punt-1), 302, 25);
+  text((punt-1), displayWidth-754, 25);
 
   }
   //textSize(16);

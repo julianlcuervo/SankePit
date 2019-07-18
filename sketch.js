@@ -13,8 +13,8 @@ var buttonRight;
 
 
 function setup(){
-  //createCanvas(360,540);
-  createCanvas(displayWidth-700, displayHeight-300);
+  createCanvas(580,420);
+  //createCanvas(displayWidth-700, displayHeight-300);
   hei=(displayHeight-300);
   s = new Snake();
   frameRate(8);
@@ -25,22 +25,22 @@ function setup(){
   background(0);
   buttonLeft = createButton('<');
   //buttonLeft.position(10, 589);
-  buttonLeft.position(10,hei+49);
+  buttonLeft.position(110,hei+49);
   buttonLeft.size(120,40);
   buttonLeft.mousePressed(fLeft);
 
   buttonDown = createButton('v');
-  buttonDown.position(120, hei+93);
+  buttonDown.position(220, hei+93);
   buttonDown.size(120,40);
   buttonDown.mousePressed(fDown);
 
   buttonUp = createButton('^');
-  buttonUp.position(120,hei+5);
+  buttonUp.position(220,hei+5);
   buttonUp.size(120,40);
   buttonUp.mousePressed(fUp);
 
   buttonRight = createButton('>');
-  buttonRight.position(230, hei+49);
+  buttonRight.position(330, hei+49);
   buttonRight.size(120,40);
   buttonRight.mousePressed(fRight);
 }
